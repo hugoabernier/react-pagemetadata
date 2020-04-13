@@ -1,8 +1,8 @@
 # react-pagemetadata
 
-This project uses [React](https://reactjs.org).
-
 This is a very simple solution that loads the metadata for the current page and displays it in a web part
+
+![Page Preview](./assets/preview.png)
 
 ## Global dependencies
 
