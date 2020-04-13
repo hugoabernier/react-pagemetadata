@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "2a8fdde2-7445-4b18-bb5c-7b9260d09e57",
+  "alias": "PageMetadataWebPart",
+  "componentType": "WebPart",
+
+  "version": "*",
+  "manifestVersion": 2,
+
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart"],
+
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+    "group": { "default": "Other" },
+    "title": { "default": "Page Metadata" },
+    "description": { "default": "Displays the metadata of the current page" },
+    "officeFabricIconFontName": "PageShared",
+    "properties": {
+
+    }
+  }]
+}
