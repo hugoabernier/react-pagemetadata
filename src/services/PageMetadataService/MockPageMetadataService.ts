@@ -2,14 +2,15 @@ import { IPageMetadataService } from "./IPageMetadataService";
 import { IPageMetadata } from "./IPageMetadata";
 import { WebPartContext } from '@microsoft/sp-webpart-base';
 
+/**
+ * This class returns fake metadata about a page
+ */
 export class MockPageMetadataDataService implements IPageMetadataService {
   private _fakeMetadata: IPageMetadata;
   constructor(context: WebPartContext) {
     const { user } = context.pageContext;
     const displayName: string = user ? user.displayName : 'User1';
     const email: string = user.email ? user.email : user.loginName ? user.loginName : 'user1@contoso.com' ;
-    //text: ,
-    //email: this.props.context.pageContext.user.email ? this.props.context.pageContext.user.email : this.props.context.pageContext.user.loginName,
     this._fakeMetadata = {
       Author:
       {
